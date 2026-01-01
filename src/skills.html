@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+    <style>
+      @keyframes abs {
+        0% {
+          transform: rotate(0deg) scale(0.8);
+          opacity: 0;
+        }
+        100% {
+          transform: rotate(360deg) scale(1);
+          opacity: 1;
+        }
+      }
+
+      .spin {
+        animation: abs 2s ease-in-out forwards;
+      }
+    </style>
+  </head>
+  <body
+    class="font-serif bg-gradient-to-br from-indigo-950 via-indigo-800 to-purple-800 text-gray-200"
+  >
+    <header
+      class="sticky top-0 z-50 flex flex-wrap justify-between items-center border-2 border-b-gray-950 mb-7 p-3 bg-black text-white text-base sm:text-lg md:text-xl font-serif"
+    >
+      <h1 class="first-letter:text-amber-300">Samudyatha Karanth</h1>
+      <div class="rounded-2xl">
+        <button>
+          <span
+            ><i class="fa-solid fa-moon text-gray-700 bg-amber-100"></i
+            >&nbsp;</span
+          >/&nbsp;<span><i class="fa-solid fa-sun text-amber-400"></i></span>
+        </button>
+      </div>
+
+      <nav>
+        <ul
+          class="flex flex-wrap justify-center md:justify-end gap-3 text-sm sm:text-base"
+        >
+          <li>
+            <a href="index.html" class="hover:bg-emerald-500 rounded-xs"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="hover:bg-emerald-500 rounded-xs"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="skills.html" class="bg-emerald-500 rounded-xs">Skills</a>
+          </li>
+          <li>
+            <a href="services.html" class="hover:bg-emerald-500 rounded-xs"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="hover:bg-emerald-500 rounded-xs"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-6 mx-4 sm:mx-10 my-10 sm:my-20 p-4 sm:p-10 justify-center items-centerr"
+      >
+        <div
+          class="relative rounded-full w-48 h-48 sm:w-56 sm:h-56 lg:w-[15em] lg:h-[15em] border-6 mx-auto"
+        >
+          <div
+            class="absolute inset-0 rounded-full bg-conic from-red-400 to-red-950 to-[10%]"
+          ></div>
+          <div
+            class="absolute inset-[15%] bg-indigo-800 border-6 rounded-full flex items-center justify-center"
+          >
+            <p
+              class="spin absolute top-1/2 left-1/2 text-lg sm:text-xl transform -translate-x-1/2 -translate-y-1/2"
+            >
+              HTML 90%
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="relative rounded-full w-48 h-48 sm:w-56 sm:h-56 lg:w-[15em] lg:h-[15em] border-6 mx-auto"
+        >
+          <div
+            class="absolute inset-0 rounded-full bg-conic from-red-400 to-red-950 to-[15%]"
+          ></div>
+          <div
+            class="absolute inset-[15%] bg-indigo-800 border-6 rounded-full flex items-center justify-center"
+          >
+            <p
+              class="spin absolute top-1/2 left-1/2 text-lg sm:text-xl transform -translate-x-1/2 -translate-y-1/2"
+            >
+              CSS 85%
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="relative rounded-full w-48 h-48 sm:w-56 sm:h-56 lg:w-[15em] lg:h-[15em] border-6 mx-auto"
+        >
+          <div
+            class="absolute inset-0 rounded-full bg-conic from-red-400 to-red-950 to-[43%]"
+          ></div>
+          <div
+            class="absolute inset-[15%] bg-indigo-800 border-6 rounded-full flex items-center justify-center"
+          >
+            <p
+              class="spin absolute top-1/2 left-1/2 text-lg sm:text-xl transform -translate-x-1/2 -translate-y-1/2"
+            >
+              JavaScript 57%
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative rounded-full w-48 h-48 sm:w-56 sm:h-56 lg:w-[15em] lg:h-[15em] border-6 mx-auto"
+        >
+          <div
+            class="absolute inset-0 rounded-full bg-conic from-red-400 to-red-950 to-[88%]"
+          ></div>
+          <div
+            class="absolute inset-[15%] bg-indigo-800 border-6 rounded-full flex items-center justify-center"
+          >
+            <p
+              class="spin absolute top-1/2 left-1/2 text-lg sm:text-xl transform -translate-x-1/2 -translate-y-1/2"
+            >
+              React 12%
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative rounded-full w-48 h-48 sm:w-56 sm:h-56 lg:w-[15em] lg:h-[15em] border-6 mx-auto"
+        >
+          <div
+            class="absolute inset-0 rounded-full bg-conic from-red-400 to-red-950 to-[22%]"
+          ></div>
+          <div
+            class="absolute inset-[15%] bg-indigo-800 border-6 rounded-full flex items-center justify-center"
+          >
+            <p
+              class="spin absolute top-1/2 left-1/2 text-lg sm:text-xl transform -translate-x-1/2 -translate-y-1/2"
+            >
+              Tailwind 78%
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative rounded-full w-48 h-48 sm:w-56 sm:h-56 lg:w-[15em] lg:h-[15em] border-6 mx-auto"
+        >
+          <div
+            class="absolute inset-0 rounded-full bg-conic from-red-400 to-red-950 to-[95%]"
+          ></div>
+          <div
+            class="absolute inset-[15%] bg-indigo-800 border-6 rounded-full flex items-center justify-center"
+          >
+            <p
+              class="spin absolute top-1/2 left-1/2 text-lg sm:text-xl transform -translate-x-1/2 -translate-y-1/2"
+            >
+              Node.js 5%
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative rounded-full w-48 h-48 sm:w-56 sm:h-56 lg:w-[15em] lg:h-[15em] border-6 mx-auto"
+        >
+          <div
+            class="absolute inset-0 rounded-full bg-conic from-red-400 to-red-950 to-[2%]"
+          ></div>
+          <div
+            class="absolute inset-[15%] bg-indigo-800 border-6 rounded-full flex items-center justify-center"
+          >
+            <p
+              class="spin absolute top-1/2 left-1/2 text-lg sm:text-xl transform -translate-x-1/2 -translate-y-1/2"
+            >
+              Databases 98%
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative rounded-full w-48 h-48 sm:w-56 sm:h-56 lg:w-[15em] lg:h-[15em] border-6 mx-auto"
+        >
+          <div
+            class="absolute inset-0 rounded-full bg-conic from-red-400 to-red-950 to-[13%]"
+          ></div>
+          <div
+            class="absolute inset-[15%] bg-indigo-800 border-6 rounded-full flex items-center justify-center"
+          >
+            <p
+              class="spin absolute top-1/2 left-1/2 text-lg sm:text-xl transform -translate-x-1/2 -translate-y-1/2"
+            >
+              Git 87%
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

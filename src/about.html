@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+    <style>
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px); /* Up */
+        }
+        60% {
+          transform: translateY(-10px); /* Small bounce */
+        }
+      }
+
+      .bounce {
+        animation: bounce 1.5s ease-in-out 2;
+      }
+    </style>
+  </head>
+  <body
+    class="font-serif bg-gradient-to-br from-indigo-950 via-indigo-800 to-purple-800 text-gray-200"
+  >
+    <header
+      class="sticky top-0 z-50 flex flex-wrap justify-between items-center border-2 border-b-gray-950 mb-7 p-3 bg-black text-white text-base sm:text-lg md:text-xl font-serif"
+    >
+      <h1 class="first-letter:text-amber-300">Samudyatha Karanth</h1>
+      <div class="rounded-2xl">
+        <button>
+          <span
+            ><i class="fa-solid fa-moon text-gray-700 bg-amber-100"></i
+            >&nbsp;</span
+          >/&nbsp;<span><i class="fa-solid fa-sun text-amber-400"></i></span>
+        </button>
+      </div>
+
+      <nav>
+        <ul
+          class="flex flex-wrap justify-center md:justify-end gap-3 text-sm sm:text-base"
+        >
+          <li>
+            <a href="index.html" class="hover:bg-emerald-500 rounded-xs"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="bg-emerald-500 rounded-xs">About</a>
+          </li>
+          <li>
+            <a href="skills.html" class="hover:bg-emerald-500 rounded-xs"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a href="services.html" class="hover:bg-emerald-500 rounded-xs"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="hover:bg-emerald-500 rounded-xs"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1
+      class="font-bold text-3xl text-center text-amber-600 underline decoration-double text-shadow-lg/80 text-shadow-amber-950 m-5"
+    >
+      The Story so far
+    </h1>
+    <main class="flex justify-center items-center box-border">
+      <section class="flex-col w-full sm:w-[90%] md:w-[46em] border-2">
+        <div>
+          <img
+            src="../images/profile1.jpg"
+            class="bounce rounded-full w-48 sm:w-64 md:w-[17em] h-70 mx-auto p-1.5 transition duration-500 ease-linear hover:scale-105"
+          />
+        </div>
+        <input type="checkbox" id="ch" class="peer hidden" />
+        <div class="text-base sm:text-lg md:text-xl p-1.5">
+          <p>
+            I'm <strong>Samudyatha Karanth</strong> , born and raised in the
+            vibrant city of Bangalore, a place where tradition meets innovation.
+            Growing up in such a dynamic environment has given me a deep
+            appreciation for creativity, culture, and the endless opportunities
+            to explore and learn. From an early age, I found myself drawn to
+            crafts — whether it was creating something from scratch,
+            experimenting with colors and textures, or designing unique pieces.
+            Crafting has always been my way of expressing creativity and finding
+            joy in the little details. In many ways, this love for crafts led me
+            to full stack development — just like crafting, building websites
+            allows me to create something beautiful and functional from the
+            ground up, blending creativity with structure.
+          </p>
+        </div>
+        <label
+          for="ch"
+          class="inline-block text-center cursor-pointer mb-2 ml-2 hover:bg-blue-900 border-2 bg-amber-700 p-3 rounded-xl mt-3 peer-checked:hidden"
+          >Read More</label
+        >
+        <div class="text-xl p-1.5 hidden peer-checked:block">
+          <p>
+            Alongside this, music has been a constant companion in my life. I
+            love how a single melody can inspire emotions, spark creativity, or
+            simply make the day brighter. Whether I'm working, relaxing, or
+            reflecting, music is always a part of the moment. I'm also
+            passionate about reading novels, which transport me into different
+            worlds and introduce me to new perspectives. Every story I read
+            leaves a small mark, shaping the way I think and view the world.
+            These interests — crafting, music, and reading — are more than
+            hobbies to me. They are a source of inspiration, helping me stay
+            curious, imaginative, and openminded. They influence not only my
+            personal life but also how I approach challenges, connect with
+            people, and seek meaningful experiences.
+          </p>
+          <label
+            for="ch"
+            class="inline-block cursor-pointer mb-2 ml-2 hover:bg-blue-900 border-2 bg-amber-700 p-3 rounded-xl mt-3"
+            >Read less</label
+          >
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

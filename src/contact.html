@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body
+    class="font-serif bg-gradient-to-br from-indigo-950 via-indigo-800 to-purple-800 text-gray-200"
+  >
+    <header
+      class="sticky top-0 z-50 flex flex-wrap justify-between items-center border-2 border-b-gray-950 mb-7 p-3 bg-black text-white text-base sm:text-lg md:text-xl font-serif"
+    >
+      <h1 class="first-letter:text-amber-300">Samudyatha Karanth</h1>
+      <div class="rounded-2xl">
+        <button>
+          <span
+            ><i class="fa-solid fa-moon text-gray-700 bg-amber-100"></i
+            >&nbsp;</span
+          >/&nbsp;<span><i class="fa-solid fa-sun text-amber-400"></i></span>
+        </button>
+      </div>
+
+      <nav>
+        <ul
+          class="flex flex-wrap justify-center md:justify-end gap-3 text-sm sm:text-base"
+        >
+          <li>
+            <a href="index.html" class="hover:bg-emerald-500 rounded-xs"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="hover:bg-emerald-500 rounded-xs"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="skills.html" class="hover:bg-emerald-500 rounded-xs"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a href="services.html" class="hover:bg-emerald-500 rounded-xs"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="bg-emerald-500 rounded-xs">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1
+      class="flex justify-center m-6 font-extrabold text-4xl text-amber-600 underline decoration-double text-shadow-lg/80 text-shadow-amber-950 mb-10 py-2"
+    >
+      Contact Me
+    </h1>
+    <main class="flex justify-center items-center mb-8 font-extrabold px-4">
+      <form
+        class="flex flex-col border-4 w-full max-w-md rounded-2xl overflow-hidden shadow-2xl shadow-amber-950 bg-indigo-900/40 p-4"
+      >
+        <div>
+          <label for="Name" class="p-2">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="Name"
+            placeholder="Your name"
+            required
+            class="box-border border-2 p-2 mb-4 w-full focus:ring-4 focus:ring-emerald-700 rounded-2xl"
+          />
+        </div>
+        <div>
+          <label for="Email" class="p-2">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="Email"
+            placeholder="Your Email"
+            class="box-border border-2 p-2 mb-4 w-full focus:ring-4 focus:ring-emerald-700 rounded-2xl"
+            required
+          />
+        </div>
+        <div>
+          <label for="message" class="p-2">Message:</label>
+        </div>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Your Message"
+          class="box-border border-2 p-2 m-5 h-[12em] w-[20em] focus:ring-4 focus:ring-emerald-700 rounded-2xl"
+          required
+        ></textarea>
+        <div class="flex justify-center">
+          <input
+            type="submit"
+            value="submit"
+            class="w-full border-2 p-2 rounded-xl bg-red-500 hover:border-amber-950 hover:bg-emerald-700 transition"
+          />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <section class="flex justify-center items-center gap-10 text-4xl m-8">
+        <a href="tel:+919591506685" target="_blank"
+          ><i
+            class="fa-solid fa-phone transition duration-500 ease-out hover:text-red-700"
+          ></i
+        ></a>
+        <a href="mailto:samudyathakaranth@gmail.com" target="_blank">
+          <i
+            class="fa-solid fa-envelope transition duration-500 ease-out hover:text-red-700"
+          ></i
+        ></a>
+      </section>
+    </footer>
+  </body>
+</html>
